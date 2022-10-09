@@ -1,3 +1,5 @@
+![LendingClub Logo](./Resources/LendingClub_Logo.png)
+
 # Credit Risk Analysis
 Assess various models on their ability to predict credit risk
 
