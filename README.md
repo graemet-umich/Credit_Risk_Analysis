@@ -64,3 +64,14 @@ Fig. Imbalanced classification report for naive random oversampling.
 
 ## Summary
 
+The accuracy in unbalanced classification is sometimes not a good measure of the quality of the model. With this data, if one classifies every application as low risk, the accuracy would be xxx. That being said, the accuracy of the ensemble methods is better than that of the sampling methods, and the best accuracy of 0.9317 is obtained by the easy ensemble AdaBoost classifier.
+
+The high-risk precisions of the ensemble methods are higher than those of the sampling methods (all 0.01), but they are all low. The highest precision of 0.09 is obtained by the easy ensemble AdaBoost classifier. The interpretation is that if someone is classified as high-risk, then there is only a 9% chance that they actually are high risk (91% are actually low-risk).
+
+The high-risk recalls of the first five models range between 0.62 and 0.72. The recall of the easy ensemble AdaBoost classifier outperforms them with a recall of 0.92. The interpretation is that if someone is actually high-risk, then the model will classify them as high-risk 92% of the time (only 8% of high-risk candidates will be classified as low-risk). That is quite good.
+
+From a lender business perspective, all these models are conservative. Low precision tells us that many low-risk candidate borrowers are classified as high-risk. This conservatism is probably acceptable to lenders.
+
+What lenders do not want to do is lend to high-risk candidate borrowers. A high recall informs us that a model correctly identifies high-risk candidates.
+
+This study recommends the use of the easy ensemble AdaBoost classifier. It has the highest accuracy (93.17%), the highest precision (9%), and the highest recall (92%) of any of the six algorithmic models tested. Most importantly, the recall is high, identifying high-risk candidate borrowers 92% of the time. 
