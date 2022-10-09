@@ -27,7 +27,7 @@ An accuracy score is the fraction of test cases a model correctly classifies. Th
 | SMOTEENN Combination Over/Under Sampling | 0.6483 |
 | Balanced Random Forest Classifier | 0.7885 |
 | Easy Ensemble AdaBoost Classifier | 0.9317 |
-Table. Balanced accuracy scores for the six models used.
+[Table. Balanced accuracy scores for the six models used.]
 
 ### Resampling Techniques
 
