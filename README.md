@@ -13,7 +13,7 @@ Here data is obtained from LendingClub, a peer to peer lending services company.
 
 ## Results
 
-Data containing 115,679 records of 86 fields was obtained from LendinClub from Q1 of 2019. After preprocessing (with dummy variable encoding), the data contained 68,817 records of 96 feature fields, and one binany target field named loan_status with unbalanced values of either low_risk (68,470) or high_risk (347). This is a supervised learning problem, because all the features are identified by a target value.
+Data containing 115,679 records of 86 fields was obtained from LendinClub from Q1 of 2019. After preprocessing (with dummy variable encoding), the data contained 68,817 records of 95 feature fields, and one binany target field named loan_status with unbalanced values of either low_risk (68,470) or high_risk (347). This is a supervised learning problem, because all the features are identified by a target value.
 
 Six algorithms, four using sampling and two using ensemble methods, were used to classify unbalanced credit card risk data: naive random oversampling, SMOTE oversampling, cluster centroids undersampling, SMOTEENN combination over- and undersampling, balanced random forest classifier, and easy ensemble AdaBoost classifier.
 
