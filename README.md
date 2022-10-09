@@ -13,9 +13,9 @@ Here data is obtained from LendingClub, a peer to peer lending services company.
 
 ## Results
 
-Data containing 115,679 records of 86 fields was obtained from LendinClub from Q1 of 2019. After preprocessing, the data contained xxx records of xxx feature fields, and one binany target field named loan_status with values of either low_risk or high_risk. This is a supervised learning problem, because all the features are identified by a target value.
+Data containing 115,679 records of 86 fields was obtained from LendinClub from Q1 of 2019. After preprocessing (with dummy variable encoding), the data contained 68,817 records of 96 feature fields, and one binany target field named loan_status with unbalanced values of either low_risk (68,470) or high_risk (347). This is a supervised learning problem, because all the features are identified by a target value.
 
-Six algorithms, four using sampling and two using xxx, were used to classify unbalanced credit card risk data: naive random oversampling, SMOTE oversampling, cluster centroids undersampling, SMOTEENN combination over- and undersampling, balanced random forest classifier, and easy ensemble AdaBoost classifier.
+Six algorithms, four using sampling and two using ensemble methods, were used to classify unbalanced credit card risk data: naive random oversampling, SMOTE oversampling, cluster centroids undersampling, SMOTEENN combination over- and undersampling, balanced random forest classifier, and easy ensemble AdaBoost classifier.
 
 An accuracy score is the fraction of test cases a model correctly classifies. The following balanced accuracy scores were obtained:
 
@@ -27,7 +27,6 @@ An accuracy score is the fraction of test cases a model correctly classifies. Th
 | SMOTEENN Combination Over/Under Sampling | 0.6483 |
 | Balanced Random Forest Classifier | 0.7885 |
 | Easy Ensemble AdaBoost Classifier | 0.9317 |
-[Table. Balanced accuracy scores for the six models used.]
 
 ### Resampling Techniques
 
@@ -66,7 +65,7 @@ Fig. Imbalanced classification report for naive random oversampling.
 
 ## Summary
 
-The accuracy in unbalanced classification is sometimes not a good measure of the quality of the model. With this data, if one classifies every application as low risk, the accuracy would be xxx. That being said, the accuracy of the ensemble methods is better than that of the sampling methods, and the best accuracy of 0.9317 is obtained by the easy ensemble AdaBoost classifier.
+The accuracy in unbalanced classification is sometimes not a good measure of the quality of the model. With this data, if one trivially classifies every application as low risk, the accuracy would be 0.9950. That being said, the accuracy of the ensemble methods is better than that of the sampling methods, and the best accuracy of 0.9317 is obtained by the easy ensemble AdaBoost classifier.
 
 The high-risk precisions of the ensemble methods are higher than those of the sampling methods (all 0.01), but they are all low. The highest precision of 0.09 is obtained by the easy ensemble AdaBoost classifier. The interpretation is that if someone is classified as high-risk, then there is only a 9% chance that they actually are high risk (91% are actually low-risk).
 
