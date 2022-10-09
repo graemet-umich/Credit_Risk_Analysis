@@ -1,8 +1,10 @@
-# Credit_Risk_Analysis
-Module 17 Challenge
+# Credit Risk Analysis
+Assess various models on their ability to predict credit risk
 
 ## Overview
 
+
+This study uses data obtained from LendingClub, a peer to peer lending services company, 
 
 ## Results
 
@@ -44,8 +46,8 @@ Fig. Imbalanced classification report for naive random oversampling.
 ## Summary
 
 
-| Model | Balanced Accuracy Score |
-| --- | --- |
+| Algorithmic Model | Balanced Accuracy Score |
+| --- | :---: |
 | Naive Random Oversampling | 0.6384 |
 | SMOTE Oversampling | 0.6589 |
 | Cluster Centroids Undersampling | 0.5447 |
